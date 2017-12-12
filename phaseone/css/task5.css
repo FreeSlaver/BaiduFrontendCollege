@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: red;
+    padding-top: 24px;
+    padding-left: 48px;
+}
+
+/*怎么把这个ul放到右边，有那几种方式？？
+1.使用position:absolute,top ,left
+2.使用float:right
+3.使用display:flex，
+4.使用margin:auto，但必须是display:block
+
+
+居中方式的优劣
+1.使用position:absolute是相对于最近的被positioned（position属性有设置，并且非static）的祖先元素，
+所以，如果在其他的设备上，很明显位置不对。
+而回从flow中移除，并且positioned的元素之间能重叠。
+2.使用float对其他的元素有影响，需要clear掉，
+3.使用flex，很明显，目前还没得到支持。
+*/
+header ul {
+    list-style: none;
+    margin: auto;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 24px;
+}
+
+header ul li {
+    display: inline-block;
+    padding-right: 18px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+bdoy {
+    background-color: #dedede;
+}
+
+main{
+    margin-right: 25%;
+    /*float: left;*/
+}
+
+article,aside {
+    margin: 20px;
+    background-color: white;
+    /*box-shadow: 1px 3px 3px #aaaaaa;*/
+    padding-left: 20px;
+    border-right: 3px solid #aaaaaa;
+    border-bottom: 3px solid #aaaaaa;
+    border-left: 3px solid #aaaaaa;
+    border-top: 3px solid #aaaaaa;
+}
+
+h2 {
+    padding-top: 32px;
+}
+
+h2, h3 {
+    padding-bottom: 18px;
+}
+
+span.author, span.createTime {
+    display: inline-block;
+    padding-bottom: 16px;
+    color: #aaaaaa;
+}
+
+p {
+    text-indent: 2em;
+}
+
+img {
+    padding: 12px 0px;
+}
+
+
+article ul {
+    list-style-type: none;
+}
+
+#imgUl li {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+#imgUl img{
+    width: 120px;
+    height: 90px;
+}
+ol{
+    padding: 12px 32px;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    color: white;
+    padding-top: 24px;
+}
+
+aside{
+    position: absolute;
+    top:80px;
+    right: 0px;
+    margin-left: 75%;
+}
+

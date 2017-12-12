@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    padding: 20px;
+}
+
+#c{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media all and (max-width: 640px) {
+    #d4{
+        order: -1;
+    }
+    #c{
+
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+    }
+}
+#d1,#d2,#d3{
+    width: 150px;
+    border: 1px solid #F00;
+}
+#d1{
+    height: 120px;
+}
+#d2{
+    height: 100px;
+}
+#d3{
+    height: 40px;
+}
+#d4{
+    width: 150px;
+    height: 200px;
+    border: 1px solid blue;
+}
+

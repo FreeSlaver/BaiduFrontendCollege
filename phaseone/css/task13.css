@@ -1,0 +1,84 @@
+th{
+    background-color: black;
+    color: white;
+}
+table tr:nth-child(even){
+    background-color: #aaaaaa;
+}
+table tr:nth-child(-n+4){
+    color: red;
+}
+
+input{
+    width: 180px;
+}
+input:focus{
+    width: 720px;
+    transition: width 4s;
+}
+
+.container{
+    position: relative;
+    width: 400px;
+}
+.banner{
+    height: 200px;
+    position: absolute;
+    animation-name: banner1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+.banner1{
+    background-color: green;
+    animation-delay: 3s;
+}
+.banner2{
+    background-color: blue;
+    animation-delay: 3s;
+}
+.banner3{
+    background-color: purple;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+li{
+    display: inline-block;
+    opacity: 0.7;
+    /*width: 90px;*/
+    /*height: 90px;*/
+    padding: 0px 8px;
+
+}
+
+@keyframes banner1 {
+    /*刚开始扩张width是从0到400，局左*/
+    0%{
+        /*position: ;*/
+        left: 0px;
+        width: 0px;
+    }
+    /*后面收缩，width是从400到0，也就是有3个状态*/
+    50%{
+        left: 0px;
+        width: 400px;
+    }
+    100%{
+        /*right: 0;*/
+        left: 400px;
+        width: 0px;
+    }
+}
+/*@keyframes banner2{*/
+    /*from{*/
+        /*width: 0px;*/
+    /*}*/
+    /*to{*/
+        /*width: 400px;*/
+    /*}*/
+/*}*/
